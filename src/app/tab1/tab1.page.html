@@ -1,17 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Profile</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">SE Employee</ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>SE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> 
+    
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+
+<img src="assets/image.PNG" usemap="#imageMap">
+
+<map name="imageMap">
+    <area target="rect" title=""  coords="14,9 104, 53" shape="rect" (click)="showSomeAlertMain();">
+    <area target="rect" title="" coords="147,10,200,53" shape="rect" (click)="showSomeAlertF1();">
+    <area target="rect" title=""  coords="211,5,265,55" shape="rect" (click)="showSomeAlertF2();">
+    <area target="rect" title=""  coords="277,9,332,58" shape="rect" (click)="showSomeAlertF3();">
+    <area target="rect" title=""  coords="338,7,393,56" shape="rect" (click)="showSomeAlertF4();">
+</map>
+
+  </ion-content>
+</div>

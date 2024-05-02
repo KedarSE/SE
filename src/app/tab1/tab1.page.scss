@@ -1,0 +1,17 @@
+// p {
+//     font-family: Lato;
+//   }
+
+//   .area {
+//     position: absolute;
+//     cursor: pointer;
+//     transition: all 0.1s;
+//     &:hover{
+//       border: 2px solid lightgray;
+//       box-shadow: 0 0px 5px darkgray;
+//     }
+//   }
+
+  img[usemap], map area[shape]{
+    outline-color: #F00;
+}
